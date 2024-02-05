@@ -1,0 +1,18 @@
+mixin sSpeakers(data)
+	// start sSpeakers
+	+b.SECTION.sSpeakers.section#sSpeakers&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Спикеры
+			mixin item(img, title, span, text)
+				+e.item
+					+e.img: +img(`img/${img}`, 'bg')
+					.h4!= title
+					+e.status!= span
+					p!= text
+			+e.row.row
+				.col-6.col-md-4.col-lg-3: +item('sSpeakers-img-1.jpg', 'Наталина Снегурова', 'МИНЦИФРА РТ', 'Министр цифрового<br>развития государственного<br>управления, информационных<br>технологий и связи Республики Татарстан')
+				.col-6.col-md-4.col-lg-3: +item('sSpeakers-img-2.jpg', 'Виктор Викторовский', 'МИНЦИФРА РТ', 'Генеральный директор')
+				.col-6.col-md-4.col-lg-3: +item('sSpeakers-img-3.jpg', 'Михаил Цимбаль', 'МИНЦИФРА РТ', 'Руководитель')
+				.col-6.col-md-4.col-lg-3: +item('sSpeakers-img-4.jpg', 'Наталья Тарусинка', 'МИНЦИФРА РТ', 'Цифровой художник')
+	// end sSpeakers

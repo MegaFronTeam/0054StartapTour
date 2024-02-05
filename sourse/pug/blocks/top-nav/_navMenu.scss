@@ -3,10 +3,12 @@
 
 		display: flex;
 		text-align: center;
-		@include roww(20px);
+		@include roww(16px, 8px);
 		flex-wrap: wrap;
 	}
-
+	@include media-breakpoint-up(xl) {
+		--bs-gutter-x: #{rem(20)};
+	}
 	list-style: none;
 	position: relative;
 	margin-bottom: 0;
@@ -19,15 +21,24 @@
 	}
 	a{
 		display: block;
-		padding: rem(20) calc(var(--bs-gutter-x) / 2);
+		padding: 0 calc(var(--bs-gutter-x) / 2);
+		font-size: rem(14);
+		font-weight: 700;
+		text-decoration: underline;
+	}
+}
+
+.menu-mobile  {
+	@include media-breakpoint-up(lg) {
+		max-width: rem(592);
+		margin: 0 auto;
 	}
 }
 
 
-
 .toggle-menu-mobile {
-	--h: #{em(2)};
-	--color: #{$primary};
+	--h: #{rem(3)};
+	--color: #fff;
 	--position: calc(var(--h) * 2);
 	&.on span {
 		--color: transparent;
@@ -40,7 +51,7 @@
 	display: block;
 	height: calc(var(--h)* 12);
 	position: relative; 
-	font-size: 32px;
+	font-size: 26px;
 	width: 1em;
 	cursor: pointer;
 	span:after,
@@ -102,12 +113,10 @@
 
 		
 		.toggle-menu-mobile { 
-			margin-left: -15%;
 			position: absolute; 
-			left: 0;
-			right: auto;
+			right: 12px;
 			color: #FFF;
-			top: 10px;
+			top: 3px;
 			z-index: 9999; 
 			span:after,
 			span:before {
@@ -115,11 +124,13 @@
 			}
 		}
 		&__inner {
-			padding: calc(env(safe-area-inset-top, 0px) + #{rem(20)}) 0 calc(env(safe-area-inset-bottom, 0px) + #{rem(20)});
+			padding: calc(env(safe-area-inset-top, 0px) + #{rem(40)}) 0 calc(env(safe-area-inset-bottom, 0px) + #{rem(20)});
 			overflow-x: hidden;
 			overflow-y: auto;
 			-webkit-overflow-scrolling: touch;
-			height: 100vh;
+			height: calc(var(--vh) * 100);
+			display: flex;
+			flex-direction: column;
 			// @include mt(.3s);
 			// transition-delay: .4s;
 			// opacity: var(--opacity);

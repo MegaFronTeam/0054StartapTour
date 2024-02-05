@@ -1,0 +1,15 @@
+mixin sMap(data)
+	// start sMap
+	+b.SECTION.sMap.section#sMap&attributes(attributes)
+		.container
+			mixin item(text, link)
+				+e.item
+					.h3!= text
+					a(href="#")!= link 
+			+e.map
+				+img('img/svg/map.svg').map
+			+e.row.row
+				.col-sm-6.col-lg-4: +item('100+<br>Городов', 'Найти город')
+				.col-sm-6.col-lg-4: +item('100 000+<br>Участников', 'Стать участником')
+				.col-sm-6.col-lg-4: +item('15 000+<br>Заявок на конкурс', 'Подать заявку')
+	// end sMap

@@ -1,0 +1,13 @@
+mixin sPlan(data)
+	// start sPlan
+	+b.sPlan.section#sPlan&attributes(attributes)
+		.container
+			mixin item(title)
+				+e.item
+					+e.title!= title
+					+e.date 1 марта - 19 апреля
+					+logo
+			+e.row.row
+				+e.col.col-lg-6: +item('Представь свой проект')
+				+e.col.col-lg-6: +item('Найди инвестора')
+	// end sPlan

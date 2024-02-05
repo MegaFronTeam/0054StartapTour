@@ -6,7 +6,8 @@
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
-		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
 		<link href="css/main.min.css" rel="stylesheet"/>
@@ -30,228 +31,340 @@
 			<main>
 				<!-- start headerBlock-->
 				<div class="headerBlock section" id="headerBlock">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>headerBlock ds dfsdfdsfsd</h2>
-							<svg class="icon icon-telegram ">
-								<use xlink:href="img/svg/sprite.svg#telegram"></use>
-							</svg>
-							<svg class="iconC iconC-telegram ">
-								<use xlink:href="img/svg/spriteC.svg#telegram"></use>
-							</svg>
+					<div class="headerBlock__container container"><img class="bg" src="img/headerBlock-bg-1.png" alt="" loading="lazy"/>
+						<div class="section-title"><img src="img/svg/logo-short.svg" alt="" loading="lazy"/>
+							<h1>Сколоково Стартап Тур<br>В&nbsp;поисках единорога</h1>
 						</div>
-						<div class="row"></div>
+						<a class="headerBlock__btn btn btn-outline-light" href="#">Бесплатное офлайн участие
+						</a>
+						<div class="headerBlock__slider def-slider swiper">
+							<div class="swiper-wrapper">
+								<div class="headerBlock__slide swiper-slide">
+										<div class="headerBlock__item pass">
+											<div class="headerBlock__date">10 февраля
+											</div>
+											<div class="h4">Москва</div>
+											<div class="headerBlock__btn-item btn btn-light">Как это было
+											</div>
+										</div>
+								</div>
+								<div class="headerBlock__slide swiper-slide">
+										<div class="headerBlock__item active">
+											<div class="headerBlock__date">1 марта
+											</div>
+											<div class="h4">Красноярск</div>
+											<div class="headerBlock__btn-item btn btn-accent">Программа
+											</div>
+										</div>
+								</div>
+								<div class="headerBlock__slide swiper-slide">
+										<div class="headerBlock__item">
+											<div class="headerBlock__date">10 апреля
+											</div>
+											<div class="h4">Екатеринбург</div>
+											<div class="headerBlock__btn-item btn btn-accent">Программа
+											</div>
+										</div>
+								</div>
+								<div class="headerBlock__slide swiper-slide">
+										<div class="headerBlock__item">
+											<div class="headerBlock__date">12 мая
+											</div>
+											<div class="h4">Санкт-Петербург</div>
+											<div class="headerBlock__btn-item btn btn-accent">Программа
+											</div>
+										</div>
+								</div>
+								<div class="headerBlock__slide swiper-slide">
+										<div class="headerBlock__item">
+											<div class="headerBlock__date">1 июня
+											</div>
+											<div class="h4">Казань</div>
+											<div class="headerBlock__btn-item btn btn-accent">Программа
+											</div>
+										</div>
+								</div>
+							</div>
+							<div class="swiper-scrollbar"></div>
+						</div>
 					</div>
 				</div>
 				<!-- end headerBlock-->
-				<!-- start sCatalog-->
-				<div class="sCatalog section">
+				<!-- start sMap-->
+				<section class="sMap section" id="sMap">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>sCatalog</h2>
-							<p>Выкупаем проблемные автомобили в день обращения</p>
+						<div class="sMap__map"><img class="map" src="img/svg/map.svg" alt="" loading="lazy"/>
 						</div>
-						<div class="sCatalog__row row">
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-1.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
+						<div class="sMap__row row">
+							<div class="col-sm-6 col-lg-4">
+									<div class="sMap__item">
+										<div class="h3">100+<br>Городов</div><a href="#">Найти город</a>
 									</div>
-								</article>
-								<!-- /.product-item-->
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-2.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
+							<div class="col-sm-6 col-lg-4">
+									<div class="sMap__item">
+										<div class="h3">100 000+<br>Участников</div><a href="#">Стать участником</a>
 									</div>
-								</article>
-								<!-- /.product-item-->
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-3.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
+							<div class="col-sm-6 col-lg-4">
+									<div class="sMap__item">
+										<div class="h3">15 000+<br>Заявок на конкурс</div><a href="#">Подать заявку</a>
 									</div>
-								</article>
-								<!-- /.product-item-->
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-4.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
+						</div>
+					</div>
+				</section>
+				<!-- end sMap-->
+				<!-- start sInfo-->
+				<section class="sInfo section" id="sInfo">
+					<div class="container">
+						<div class="sInfo__row row">
+							<div class="col-lg-6 order-lg-last"> 
+								<div class="sInfo__item">
+									<div class="h3">Тема Стартап-тура-2024 – «CreativeTECH. </div>
+									<div class="sInfo__text">Креативные индустрии&nbsp;&mdash; импульс для технологического развития&laquo;. &laquo;Сколково&raquo; выступит инициатором диалога о&nbsp;творческих индустриях, как драйвере технологического развития, о&nbsp;необходимости создания экосистемы и&nbsp;поиска новых форм взаимодействия предпринимательского и&nbsp;креативного сообщества в&nbsp;регионах.
 									</div>
-								</article>
-								<!-- /.product-item-->
+								</div>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-5.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="col-lg-6">
+								<p>Стартап-тур проводится в&nbsp;разных городах России с&nbsp;2011 года и&nbsp;является самым масштабным проектом в&nbsp;России и&nbsp;странах СНГ, направленным на&nbsp;поиск перспективных инновационных разработок, развитие компетенций начинающих стартап-команд, популяризацию креативных индустрий и&nbsp;инновационного технологического предпринимательства в&nbsp;России.</p>
+								<p>Стартап-тур стал победителем Russian Creative Awards 2021&nbsp;в номинации &laquo;Лучший креативный проект индустриального сектора&raquo;</p>
+								<a class="sInfo__btn btn btn-accent" href="#">Узнать больше о мероприятии
+								</a>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-6.jpg" alt="" loading="lazy"/>
+						</div>
+					</div>
+				</section>
+				<!-- end sInfo-->
+				<!-- start sSpeakers-->
+				<section class="sSpeakers section" id="sSpeakers">
+					<div class="container">
+						<div class="section-title">
+							<h2>Спикеры</h2>
+						</div>
+						<div class="sSpeakers__row row">
+							<div class="col-6 col-md-4 col-lg-3">
+									<div class="sSpeakers__item">
+										<div class="sSpeakers__img"><img class="object-fit-js" src="img/sSpeakers-img-1.jpg" alt="" loading="lazy"/>
 										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
+										<div class="h4">Наталина Снегурова</div>
+										<div class="sSpeakers__status">МИНЦИФРА РТ
 										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
+										<p>Министр цифрового<br>развития государственного<br>управления, информационных<br>технологий и связи Республики Татарстан</p>
 									</div>
-								</article>
-								<!-- /.product-item-->
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-7.jpg" alt="" loading="lazy"/>
+							<div class="col-6 col-md-4 col-lg-3">
+									<div class="sSpeakers__item">
+										<div class="sSpeakers__img"><img class="object-fit-js" src="img/sSpeakers-img-2.jpg" alt="" loading="lazy"/>
 										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
+										<div class="h4">Виктор Викторовский</div>
+										<div class="sSpeakers__status">МИНЦИФРА РТ
 										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
+										<p>Генеральный директор</p>
 									</div>
-								</article>
-								<!-- /.product-item-->
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-8.jpg" alt="" loading="lazy"/>
+							<div class="col-6 col-md-4 col-lg-3">
+									<div class="sSpeakers__item">
+										<div class="sSpeakers__img"><img class="object-fit-js" src="img/sSpeakers-img-3.jpg" alt="" loading="lazy"/>
 										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
+										<div class="h4">Михаил Цимбаль</div>
+										<div class="sSpeakers__status">МИНЦИФРА РТ
 										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
+										<p>Руководитель</p>
 									</div>
-								</article>
-								<!-- /.product-item-->
+							</div>
+							<div class="col-6 col-md-4 col-lg-3">
+									<div class="sSpeakers__item">
+										<div class="sSpeakers__img"><img class="object-fit-js" src="img/sSpeakers-img-4.jpg" alt="" loading="lazy"/>
+										</div>
+										<div class="h4">Наталья Тарусинка</div>
+										<div class="sSpeakers__status">МИНЦИФРА РТ
+										</div>
+										<p>Цифровой художник</p>
+									</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sSpeakers-->
+				<!-- start sHowItWas-->
+				<section class="sHowItWas section" id="sHowItWas">
+					<div class="sHowItWas__container container"><img class="bg" src="img/sHowItWas-bg-1.png" alt="" loading="lazy"/>
+						<div class="section-title">
+							<h2>Как это было</h2>
+						</div>
+						<div class="sHowItWas__row row">
+							<div class="col-lg-6">
+								<div class="sHowItWas__video-wrap"><iframe src="https://www.youtube.com/embed/6dBEqSJffwk" title="Why Do We Fall? (10 Hours of Ambient Batman Vibes)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+								<div class="sHowItWas__inner-row row">
+									<div class="sHowItWas__inner-col col-sm-6">
+										<div class="sHowItWas__item"><img src="img/sHowItWas-img-1.png" alt="" loading="lazy"/>
+											<div class="h4">Конкурс лучших стартапов страны</div>
+											<a class="sHowItWas__btn btn btn-accent" href="#">Участвовать
+											</a>
+										</div>
+									</div>
+									<div class="sHowItWas__inner-col col-sm-6">
+										<div class="sHowItWas__item">
+											<div class="h4">Самое интересное на выставке</div>
+											<p>Расскажите о&nbsp;своём проекте в&nbsp;рамках нашей онлайн выставки. Для этого выберите &laquo;Хочу принять участие в&nbsp;онлайн выставке&raquo; и&nbsp;заполните анкету в&nbsp;личном кабинете.</p>
+										</div>
+										<div class="sHowItWas__item">
+											<div class="h4">Networking</div>
+											<p>Вы&nbsp;можете назначить встречу любому участнику мероприятия, а&nbsp;это&nbsp;&mdash; идеальный шанс найти себе инвесторов, партнеров, клиентов и&nbsp;единомышленников в&nbsp;команду.</p>
+										</div>
+									</div>
+								</div>
+								<div class="sHowItWas__item">
+									<div class="h4">Менторская сессия</div>
+									<p>Презентуйте свой проект менторам и&nbsp;получите рекомендации по&nbsp;его развитию</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<ul>
+											<li>
+												<div><span>11 марта</span>
+													<div class="h4">Саранск</div>
+												</div>
+												<a class="sHowItWas__list-btn btn btn-light" href="#">Финалисты
+												</a>
+											</li>
+											<li>
+												<div><span>11 марта</span>
+													<div class="h4">Новосибирск</div>
+												</div>
+												<a class="sHowItWas__list-btn btn btn-light" href="#">Финалисты
+												</a>
+											</li>
+											<li>
+												<div><span>11 марта</span>
+													<div class="h4">Хабаровск</div>
+												</div>
+												<a class="sHowItWas__list-btn btn btn-light" href="#">Финалисты
+												</a>
+											</li>
+											<li>
+												<div><span>11 марта</span>
+													<div class="h4">Саранск</div>
+												</div>
+												<a class="sHowItWas__list-btn btn btn-light" href="#">Финалисты
+												</a>
+											</li>
+											<li>
+												<div><span>11 марта</span>
+													<div class="h4">Казань</div>
+												</div>
+												<a class="sHowItWas__list-btn btn btn-light" href="#">Финалисты
+												</a>
+											</li>
+											<li>
+												<div><span>11 марта</span>
+													<div class="h4">Саратов</div>
+												</div>
+												<a class="sHowItWas__list-btn btn btn-light" href="#">Финалисты
+												</a>
+											</li>
+											<li>
+												<div><span>11 марта</span>
+													<div class="h4">Пермь</div>
+												</div>
+												<a class="sHowItWas__list-btn btn btn-light" href="#">Финалисты
+												</a>
+											</li>
+											<li>
+												<div><span>11 марта</span>
+													<div class="h4">Архангельск</div>
+												</div>
+												<a class="sHowItWas__list-btn btn btn-light" href="#">Финалисты
+												</a>
+											</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sHowItWas-->
+				<!-- start sPlan-->
+				<div class="sPlan section" id="sPlan">
+					<div class="container">
+						<div class="sPlan__row row">
+							<div class="sPlan__col col-lg-6">
+									<div class="sPlan__item">
+										<div class="sPlan__title">Представь свой проект
+										</div>
+										<div class="sPlan__date">1 марта - 19 апреля
+										</div><svg viewBox="0 0 108 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2_1613)">
+<path d="M25.372 12.1395H21.6864L18.1743 16V8.2835H15.33V10.1623C15.2365 10.0415 15.1386 9.92075 15.0318 9.80444C14.4487 9.23185 13.7543 8.78452 12.9931 8.49822C12.2275 8.21193 11.4129 8.08667 10.5984 8.13141C9.81495 8.09562 9.03599 8.24324 8.32379 8.56085C7.60715 8.87846 6.97507 9.36158 6.47654 9.96548C6.07148 10.462 5.78215 11.0391 5.6219 11.6564C5.46166 12.2782 5.43495 12.9224 5.54178 13.5531C6.20501 16.5234 8.94696 16.9976 10.9589 17.2615C12.548 17.4673 14.0748 17.7625 14.0347 19.185C13.9902 20.6076 12.3343 21.0146 11.2215 21.0146C8.38611 21.0146 8.29263 18.9077 8.29263 18.9077H5.26135C5.31477 20.0618 5.75099 21.1667 6.50769 22.039C7.56709 23.2379 9.15617 23.8373 11.2349 23.8373C12.7305 23.8731 14.1816 23.3587 15.3256 22.388V23.6405H18.1699V20.035L19.1803 18.9301L22.0558 23.6718H25.3675L21.2012 16.7202L25.372 12.1127V12.1395ZM15.3345 15.6108C13.2958 13.9244 8.86684 14.9846 8.39501 12.8866C8.14574 11.7817 9.23629 10.8065 10.6607 10.8065C11.907 10.8065 13.2112 11.0928 13.6964 12.8866H15.3345V15.6108Z" fill="white"/>
+<path d="M42.5892 6.95931C42.2509 5.35338 40.9289 5.06708 40.0565 5.06708C38.4229 5.06708 37.1009 6.28383 37.1009 8.67707C37.1009 10.8198 37.8487 12.4615 40.0921 12.4615C40.8889 12.4615 42.2599 12.0858 42.6738 9.9654H43.8578C43.3593 13.4009 40.5906 13.5485 39.9052 13.5485C37.8487 13.5485 35.8412 12.2065 35.8412 8.71286C35.8412 5.91702 37.4258 3.97559 40.0565 3.97559C42.3889 3.97559 43.5997 5.42942 43.7733 6.95931H42.5892Z" fill="white"/>
+<path d="M45.843 9.56296L48.674 6.68213H50.0851L47.5657 9.15142L50.2364 13.3116H48.9144L46.7822 9.92978L45.8475 10.8066V13.3116H44.7391V6.68213H45.8475V9.56296H45.843Z" fill="white"/>
+<path d="M53.0407 6.49414C55.1461 6.49414 56.0943 8.28795 56.0943 9.9923C56.0943 11.6966 55.1461 13.4994 53.0407 13.4994C50.9353 13.4994 49.9872 11.6966 49.9872 9.9923C49.9872 8.28795 50.9353 6.49414 53.0407 6.49414ZM53.0407 12.5332C54.6254 12.5332 54.9592 10.878 54.9592 9.98782C54.9592 9.09763 54.6209 7.45591 53.0407 7.45591C51.4605 7.45591 51.1222 9.09763 51.1222 9.98782C51.1222 10.878 51.4605 12.5332 53.0407 12.5332Z" fill="white"/>
+<path d="M62.1078 6.68213V13.3116H60.9995V7.60811H58.3911V10.6276C58.3911 12.6317 57.7323 13.41 56.6818 13.41C56.3836 13.41 56.1477 13.3608 55.9696 13.3116V12.4483C56.0586 12.4617 56.2322 12.4751 56.4192 12.4751C57.0423 12.4751 57.2783 12.1978 57.2783 10.2563V6.6866H62.1034L62.1078 6.68213Z" fill="white"/>
+<path d="M64.378 9.56296L67.2089 6.68213H68.62L66.1006 9.15142L68.7713 13.3116H67.4493L65.3172 9.92978L64.3824 10.8066V13.3116H63.274V6.68213H64.3824V9.56296H64.378Z" fill="white"/>
+<path d="M71.5711 6.49414C73.6765 6.49414 74.6247 8.28795 74.6247 9.9923C74.6247 11.6966 73.6765 13.4994 71.5711 13.4994C69.4657 13.4994 68.5176 11.6966 68.5176 9.9923C68.5176 8.28795 69.4657 6.49414 71.5711 6.49414ZM71.5711 12.5332C73.1558 12.5332 73.4896 10.878 73.4896 9.98782C73.4896 9.09763 73.1513 7.45591 71.5711 7.45591C69.9909 7.45591 69.6526 9.09763 69.6526 9.98782C69.6526 10.878 69.9909 12.5332 71.5711 12.5332Z" fill="white"/>
+<path d="M75.4259 6.68213H78.4171C79.8771 6.68213 80.576 7.46049 80.576 8.37305C80.576 9.16036 80.0418 9.63901 79.4676 9.80005C80.1665 9.96109 80.9632 10.4129 80.9632 11.5536C80.9632 12.6048 80.113 13.3072 78.5462 13.3072H75.4304V6.68213H75.4259ZM76.5343 9.42876H78.1412C79.1026 9.42876 79.4632 9.15142 79.4632 8.42673C79.4632 7.89888 79.1382 7.61258 78.1679 7.61258H76.5343V9.42876ZM76.5343 12.3856H78.5151C79.3741 12.3856 79.8504 12.0994 79.8504 11.3568C79.8504 10.6142 79.3029 10.3055 78.4038 10.3055H76.5343V12.3856Z" fill="white"/>
+<path d="M84.4575 6.49414C86.5629 6.49414 87.511 8.28795 87.511 9.9923C87.511 11.6966 86.5629 13.4994 84.4575 13.4994C82.352 13.4994 81.4039 11.6966 81.4039 9.9923C81.4039 8.28795 82.352 6.49414 84.4575 6.49414ZM84.4575 12.5332C86.0421 12.5332 86.3759 10.878 86.3759 9.98782C86.3759 9.09763 86.0377 7.45591 84.4575 7.45591C82.8773 7.45591 82.539 9.09763 82.539 9.98782C82.539 10.878 82.8773 12.5332 84.4575 12.5332Z" fill="white"/>
+<path d="M42.0151 21.6094C41.8638 21.0592 41.5655 19.9945 40.0076 19.9945C39.0951 19.9945 37.7241 20.6476 37.7241 23.2153C37.7241 24.8436 38.4096 26.3601 40.0076 26.3601C41.0536 26.3601 41.7925 25.7204 42.0151 24.6065H43.898C43.5241 26.5882 42.2377 27.966 39.972 27.966C37.5639 27.966 35.8457 26.3243 35.8457 23.193C35.8457 20.0616 37.6663 18.3931 39.9987 18.3931C42.705 18.3931 43.8 20.2719 43.9024 21.6139H42.0195L42.0151 21.6094Z" fill="white"/>
+<path d="M46.2793 27.7248V22.3971H44.2852V20.979H50.0361V22.3971H48.042V27.7248H46.2838H46.2793Z" fill="white"/>
+<path d="M50.5836 23.1617C50.7839 21.095 52.2038 20.8042 53.5748 20.8042C54.5229 20.8042 56.2456 21.0905 56.2456 22.7591V26.4048C56.2456 27.1921 56.4192 27.3711 56.6328 27.4471V27.7245H54.7366C54.6387 27.3979 54.612 27.2995 54.5763 26.9237C54.1757 27.3353 53.6015 27.9034 52.4086 27.9034C51.3982 27.9034 50.3744 27.3263 50.3744 25.9351C50.3744 24.3829 51.821 23.7432 53.5036 23.6045C54.2514 23.5419 54.5274 23.3406 54.5274 23.014C54.5274 22.2625 53.8152 22.2267 53.3656 22.2267C52.4798 22.2267 52.3285 22.7769 52.2795 23.1661H50.5836V23.1617ZM53.3256 24.8034C52.6668 24.9152 52.1282 25.0897 52.1282 25.8188C52.1282 26.4451 52.6 26.633 52.9516 26.633C53.7262 26.633 54.5229 26.1185 54.5229 25.3044V24.441C54.3493 24.5797 54.0511 24.6915 53.3256 24.8034Z" fill="white"/>
+<path d="M59.1389 21.9583H59.1656C59.4906 21.4305 59.9757 20.8042 61.1598 20.8042C62.642 20.8042 63.964 21.9717 63.964 24.3024C63.964 26.1454 63.1138 27.8989 61.1197 27.8989C59.8867 27.8989 59.4505 27.2235 59.2368 26.8566L59.2012 26.8432V30.4264H57.443V20.9787H59.1389V21.9583ZM59.1389 24.4008C59.1389 25.2015 59.4638 26.4451 60.5989 26.4451C61.734 26.4451 62.1568 25.5057 62.1568 24.5037C62.1568 23.4256 61.8586 22.3341 60.6479 22.3341C59.5262 22.3341 59.1389 23.3361 59.1389 24.4008Z" fill="white"/>
+<path d="M66.2964 27.7248V22.3971H64.3022V20.979H70.0532V22.3971H68.0591V27.7248H66.3008H66.2964Z" fill="white"/>
+<path d="M70.6008 23.1617C70.8011 21.095 72.2211 20.8042 73.592 20.8042C74.5401 20.8042 76.2628 21.0905 76.2628 22.7591V26.4048C76.2628 27.1921 76.4364 27.3711 76.65 27.4471V27.7245H74.7538C74.6559 27.3979 74.6292 27.2995 74.5936 26.9237C74.1929 27.3353 73.6187 27.9034 72.4258 27.9034C71.4154 27.9034 70.3916 27.3263 70.3916 25.9351C70.3916 24.3829 71.8382 23.7432 73.5208 23.6045C74.2686 23.5419 74.5446 23.3406 74.5446 23.014C74.5446 22.2625 73.8324 22.2267 73.3828 22.2267C72.497 22.2267 72.3457 22.7769 72.2967 23.1661H70.6008V23.1617ZM73.3428 24.8034C72.684 24.9152 72.1454 25.0897 72.1454 25.8188C72.1454 26.4451 72.6172 26.633 72.9689 26.633C73.7434 26.633 74.5401 26.1185 74.5401 25.3044V24.441C74.3665 24.5797 74.0683 24.6915 73.3428 24.8034Z" fill="white"/>
+<path d="M83.4826 20.9834V27.7247H81.7244V22.397H79.2183V27.7247H77.4601V20.9834H83.4826Z" fill="white"/>
+<path d="M91.7396 27.7248H89.8567V20.1916H87.1237V18.626H94.4682V20.1916H91.7351V27.7248H91.7396Z" fill="white"/>
+<path d="M96.2799 20.9835L97.7132 25.9444H97.7399L99.1109 20.9835H100.98L98.6747 27.5996C97.9135 29.7915 97.6153 30.4312 96.0796 30.4312C95.8437 30.4312 95.5321 30.4178 95.2829 30.4043V28.9863C95.3585 28.9997 95.4698 29.0131 95.6212 29.0131C96.271 29.0131 96.6182 28.9237 96.7829 27.9977L94.3125 20.979H96.2844L96.2799 20.9835Z" fill="white"/>
+<path d="M103.175 21.9583H103.202C103.526 21.4305 104.012 20.8042 105.196 20.8042C106.678 20.8042 108 21.9717 108 24.3024C108 26.1454 107.15 27.8989 105.156 27.8989C103.923 27.8989 103.486 27.2235 103.273 26.8566L103.237 26.8432V30.4264H101.479V20.9787H103.175V21.9583ZM103.175 24.4008C103.175 25.2015 103.5 26.4451 104.635 26.4451C105.77 26.4451 106.193 25.5057 106.193 24.5037C106.193 23.4256 105.894 22.3341 104.684 22.3341C103.562 22.3341 103.175 23.3361 103.175 24.4008Z" fill="white"/>
+<path d="M29.6941 1.58674V23.7164C29.6941 25.4923 28.9908 27.1966 27.74 28.4537C26.4892 29.7107 24.7978 30.4175 23.0262 30.4175H7.67836C5.91122 30.4175 4.21531 29.7107 2.96451 28.4537C1.71372 27.1966 1.01043 25.4968 1.01043 23.7164V8.28781C1.01043 6.51189 1.71372 4.80755 2.96451 3.55054C4.21531 2.29353 5.90677 1.58674 7.67836 1.58674H29.6986H29.6941ZM30.7045 0.571289H7.67836C5.6397 0.571289 3.69006 1.38544 2.24787 2.83033C0.810122 4.27969 0 6.23902 0 8.28781V23.7164C0 25.7607 0.810122 27.7245 2.24787 29.1694C3.68561 30.6143 5.6397 31.4284 7.67391 31.4284H23.0306C25.0648 31.4284 27.0189 30.6143 28.4567 29.1694C29.8944 27.7245 30.7045 25.7607 30.7045 23.7164V0.571289Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_2_1613">
+<rect width="108" height="30.8571" fill="white" transform="translate(0 0.571289)"/>
+</clipPath>
+</defs>
+</svg>
+									</div>
+							</div>
+							<div class="sPlan__col col-lg-6">
+									<div class="sPlan__item">
+										<div class="sPlan__title">Найди инвестора
+										</div>
+										<div class="sPlan__date">1 марта - 19 апреля
+										</div><svg viewBox="0 0 108 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2_1613)">
+<path d="M25.372 12.1395H21.6864L18.1743 16V8.2835H15.33V10.1623C15.2365 10.0415 15.1386 9.92075 15.0318 9.80444C14.4487 9.23185 13.7543 8.78452 12.9931 8.49822C12.2275 8.21193 11.4129 8.08667 10.5984 8.13141C9.81495 8.09562 9.03599 8.24324 8.32379 8.56085C7.60715 8.87846 6.97507 9.36158 6.47654 9.96548C6.07148 10.462 5.78215 11.0391 5.6219 11.6564C5.46166 12.2782 5.43495 12.9224 5.54178 13.5531C6.20501 16.5234 8.94696 16.9976 10.9589 17.2615C12.548 17.4673 14.0748 17.7625 14.0347 19.185C13.9902 20.6076 12.3343 21.0146 11.2215 21.0146C8.38611 21.0146 8.29263 18.9077 8.29263 18.9077H5.26135C5.31477 20.0618 5.75099 21.1667 6.50769 22.039C7.56709 23.2379 9.15617 23.8373 11.2349 23.8373C12.7305 23.8731 14.1816 23.3587 15.3256 22.388V23.6405H18.1699V20.035L19.1803 18.9301L22.0558 23.6718H25.3675L21.2012 16.7202L25.372 12.1127V12.1395ZM15.3345 15.6108C13.2958 13.9244 8.86684 14.9846 8.39501 12.8866C8.14574 11.7817 9.23629 10.8065 10.6607 10.8065C11.907 10.8065 13.2112 11.0928 13.6964 12.8866H15.3345V15.6108Z" fill="white"/>
+<path d="M42.5892 6.95931C42.2509 5.35338 40.9289 5.06708 40.0565 5.06708C38.4229 5.06708 37.1009 6.28383 37.1009 8.67707C37.1009 10.8198 37.8487 12.4615 40.0921 12.4615C40.8889 12.4615 42.2599 12.0858 42.6738 9.9654H43.8578C43.3593 13.4009 40.5906 13.5485 39.9052 13.5485C37.8487 13.5485 35.8412 12.2065 35.8412 8.71286C35.8412 5.91702 37.4258 3.97559 40.0565 3.97559C42.3889 3.97559 43.5997 5.42942 43.7733 6.95931H42.5892Z" fill="white"/>
+<path d="M45.843 9.56296L48.674 6.68213H50.0851L47.5657 9.15142L50.2364 13.3116H48.9144L46.7822 9.92978L45.8475 10.8066V13.3116H44.7391V6.68213H45.8475V9.56296H45.843Z" fill="white"/>
+<path d="M53.0407 6.49414C55.1461 6.49414 56.0943 8.28795 56.0943 9.9923C56.0943 11.6966 55.1461 13.4994 53.0407 13.4994C50.9353 13.4994 49.9872 11.6966 49.9872 9.9923C49.9872 8.28795 50.9353 6.49414 53.0407 6.49414ZM53.0407 12.5332C54.6254 12.5332 54.9592 10.878 54.9592 9.98782C54.9592 9.09763 54.6209 7.45591 53.0407 7.45591C51.4605 7.45591 51.1222 9.09763 51.1222 9.98782C51.1222 10.878 51.4605 12.5332 53.0407 12.5332Z" fill="white"/>
+<path d="M62.1078 6.68213V13.3116H60.9995V7.60811H58.3911V10.6276C58.3911 12.6317 57.7323 13.41 56.6818 13.41C56.3836 13.41 56.1477 13.3608 55.9696 13.3116V12.4483C56.0586 12.4617 56.2322 12.4751 56.4192 12.4751C57.0423 12.4751 57.2783 12.1978 57.2783 10.2563V6.6866H62.1034L62.1078 6.68213Z" fill="white"/>
+<path d="M64.378 9.56296L67.2089 6.68213H68.62L66.1006 9.15142L68.7713 13.3116H67.4493L65.3172 9.92978L64.3824 10.8066V13.3116H63.274V6.68213H64.3824V9.56296H64.378Z" fill="white"/>
+<path d="M71.5711 6.49414C73.6765 6.49414 74.6247 8.28795 74.6247 9.9923C74.6247 11.6966 73.6765 13.4994 71.5711 13.4994C69.4657 13.4994 68.5176 11.6966 68.5176 9.9923C68.5176 8.28795 69.4657 6.49414 71.5711 6.49414ZM71.5711 12.5332C73.1558 12.5332 73.4896 10.878 73.4896 9.98782C73.4896 9.09763 73.1513 7.45591 71.5711 7.45591C69.9909 7.45591 69.6526 9.09763 69.6526 9.98782C69.6526 10.878 69.9909 12.5332 71.5711 12.5332Z" fill="white"/>
+<path d="M75.4259 6.68213H78.4171C79.8771 6.68213 80.576 7.46049 80.576 8.37305C80.576 9.16036 80.0418 9.63901 79.4676 9.80005C80.1665 9.96109 80.9632 10.4129 80.9632 11.5536C80.9632 12.6048 80.113 13.3072 78.5462 13.3072H75.4304V6.68213H75.4259ZM76.5343 9.42876H78.1412C79.1026 9.42876 79.4632 9.15142 79.4632 8.42673C79.4632 7.89888 79.1382 7.61258 78.1679 7.61258H76.5343V9.42876ZM76.5343 12.3856H78.5151C79.3741 12.3856 79.8504 12.0994 79.8504 11.3568C79.8504 10.6142 79.3029 10.3055 78.4038 10.3055H76.5343V12.3856Z" fill="white"/>
+<path d="M84.4575 6.49414C86.5629 6.49414 87.511 8.28795 87.511 9.9923C87.511 11.6966 86.5629 13.4994 84.4575 13.4994C82.352 13.4994 81.4039 11.6966 81.4039 9.9923C81.4039 8.28795 82.352 6.49414 84.4575 6.49414ZM84.4575 12.5332C86.0421 12.5332 86.3759 10.878 86.3759 9.98782C86.3759 9.09763 86.0377 7.45591 84.4575 7.45591C82.8773 7.45591 82.539 9.09763 82.539 9.98782C82.539 10.878 82.8773 12.5332 84.4575 12.5332Z" fill="white"/>
+<path d="M42.0151 21.6094C41.8638 21.0592 41.5655 19.9945 40.0076 19.9945C39.0951 19.9945 37.7241 20.6476 37.7241 23.2153C37.7241 24.8436 38.4096 26.3601 40.0076 26.3601C41.0536 26.3601 41.7925 25.7204 42.0151 24.6065H43.898C43.5241 26.5882 42.2377 27.966 39.972 27.966C37.5639 27.966 35.8457 26.3243 35.8457 23.193C35.8457 20.0616 37.6663 18.3931 39.9987 18.3931C42.705 18.3931 43.8 20.2719 43.9024 21.6139H42.0195L42.0151 21.6094Z" fill="white"/>
+<path d="M46.2793 27.7248V22.3971H44.2852V20.979H50.0361V22.3971H48.042V27.7248H46.2838H46.2793Z" fill="white"/>
+<path d="M50.5836 23.1617C50.7839 21.095 52.2038 20.8042 53.5748 20.8042C54.5229 20.8042 56.2456 21.0905 56.2456 22.7591V26.4048C56.2456 27.1921 56.4192 27.3711 56.6328 27.4471V27.7245H54.7366C54.6387 27.3979 54.612 27.2995 54.5763 26.9237C54.1757 27.3353 53.6015 27.9034 52.4086 27.9034C51.3982 27.9034 50.3744 27.3263 50.3744 25.9351C50.3744 24.3829 51.821 23.7432 53.5036 23.6045C54.2514 23.5419 54.5274 23.3406 54.5274 23.014C54.5274 22.2625 53.8152 22.2267 53.3656 22.2267C52.4798 22.2267 52.3285 22.7769 52.2795 23.1661H50.5836V23.1617ZM53.3256 24.8034C52.6668 24.9152 52.1282 25.0897 52.1282 25.8188C52.1282 26.4451 52.6 26.633 52.9516 26.633C53.7262 26.633 54.5229 26.1185 54.5229 25.3044V24.441C54.3493 24.5797 54.0511 24.6915 53.3256 24.8034Z" fill="white"/>
+<path d="M59.1389 21.9583H59.1656C59.4906 21.4305 59.9757 20.8042 61.1598 20.8042C62.642 20.8042 63.964 21.9717 63.964 24.3024C63.964 26.1454 63.1138 27.8989 61.1197 27.8989C59.8867 27.8989 59.4505 27.2235 59.2368 26.8566L59.2012 26.8432V30.4264H57.443V20.9787H59.1389V21.9583ZM59.1389 24.4008C59.1389 25.2015 59.4638 26.4451 60.5989 26.4451C61.734 26.4451 62.1568 25.5057 62.1568 24.5037C62.1568 23.4256 61.8586 22.3341 60.6479 22.3341C59.5262 22.3341 59.1389 23.3361 59.1389 24.4008Z" fill="white"/>
+<path d="M66.2964 27.7248V22.3971H64.3022V20.979H70.0532V22.3971H68.0591V27.7248H66.3008H66.2964Z" fill="white"/>
+<path d="M70.6008 23.1617C70.8011 21.095 72.2211 20.8042 73.592 20.8042C74.5401 20.8042 76.2628 21.0905 76.2628 22.7591V26.4048C76.2628 27.1921 76.4364 27.3711 76.65 27.4471V27.7245H74.7538C74.6559 27.3979 74.6292 27.2995 74.5936 26.9237C74.1929 27.3353 73.6187 27.9034 72.4258 27.9034C71.4154 27.9034 70.3916 27.3263 70.3916 25.9351C70.3916 24.3829 71.8382 23.7432 73.5208 23.6045C74.2686 23.5419 74.5446 23.3406 74.5446 23.014C74.5446 22.2625 73.8324 22.2267 73.3828 22.2267C72.497 22.2267 72.3457 22.7769 72.2967 23.1661H70.6008V23.1617ZM73.3428 24.8034C72.684 24.9152 72.1454 25.0897 72.1454 25.8188C72.1454 26.4451 72.6172 26.633 72.9689 26.633C73.7434 26.633 74.5401 26.1185 74.5401 25.3044V24.441C74.3665 24.5797 74.0683 24.6915 73.3428 24.8034Z" fill="white"/>
+<path d="M83.4826 20.9834V27.7247H81.7244V22.397H79.2183V27.7247H77.4601V20.9834H83.4826Z" fill="white"/>
+<path d="M91.7396 27.7248H89.8567V20.1916H87.1237V18.626H94.4682V20.1916H91.7351V27.7248H91.7396Z" fill="white"/>
+<path d="M96.2799 20.9835L97.7132 25.9444H97.7399L99.1109 20.9835H100.98L98.6747 27.5996C97.9135 29.7915 97.6153 30.4312 96.0796 30.4312C95.8437 30.4312 95.5321 30.4178 95.2829 30.4043V28.9863C95.3585 28.9997 95.4698 29.0131 95.6212 29.0131C96.271 29.0131 96.6182 28.9237 96.7829 27.9977L94.3125 20.979H96.2844L96.2799 20.9835Z" fill="white"/>
+<path d="M103.175 21.9583H103.202C103.526 21.4305 104.012 20.8042 105.196 20.8042C106.678 20.8042 108 21.9717 108 24.3024C108 26.1454 107.15 27.8989 105.156 27.8989C103.923 27.8989 103.486 27.2235 103.273 26.8566L103.237 26.8432V30.4264H101.479V20.9787H103.175V21.9583ZM103.175 24.4008C103.175 25.2015 103.5 26.4451 104.635 26.4451C105.77 26.4451 106.193 25.5057 106.193 24.5037C106.193 23.4256 105.894 22.3341 104.684 22.3341C103.562 22.3341 103.175 23.3361 103.175 24.4008Z" fill="white"/>
+<path d="M29.6941 1.58674V23.7164C29.6941 25.4923 28.9908 27.1966 27.74 28.4537C26.4892 29.7107 24.7978 30.4175 23.0262 30.4175H7.67836C5.91122 30.4175 4.21531 29.7107 2.96451 28.4537C1.71372 27.1966 1.01043 25.4968 1.01043 23.7164V8.28781C1.01043 6.51189 1.71372 4.80755 2.96451 3.55054C4.21531 2.29353 5.90677 1.58674 7.67836 1.58674H29.6986H29.6941ZM30.7045 0.571289H7.67836C5.6397 0.571289 3.69006 1.38544 2.24787 2.83033C0.810122 4.27969 0 6.23902 0 8.28781V23.7164C0 25.7607 0.810122 27.7245 2.24787 29.1694C3.68561 30.6143 5.6397 31.4284 7.67391 31.4284H23.0306C25.0648 31.4284 27.0189 30.6143 28.4567 29.1694C29.8944 27.7245 30.7045 25.7607 30.7045 23.7164V0.571289Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_2_1613">
+<rect width="108" height="30.8571" fill="white" transform="translate(0 0.571289)"/>
+</clipPath>
+</defs>
+</svg>
+									</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- end sCatalog-->
-				<!-- start sForm-->
-				<section class="sForm section" id="sForm">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sForm</h2>
-						</div>
-						<div class="sForm__row row">
-						</div>
-						<div class="form-wrap">
-							<form>
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<button class="form-wrap__btn btn btn-primary" type="submit">Submit
-								</button>
-								<div class="form-wrap__policy">
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
-									</label>
-								</div>
-							</form>
-						</div>
-					</div>
-				</section>
-				<!-- end sForm-->
-				<!-- start sContact-->
-				<section class="sContact section" id="sContact">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sContact</h2>
-						</div>
-						<div class="sContact__row row">
-						</div>
-					</div>
-				</section>
-				<!-- end sContact-->
+				<!-- end sPlan-->
 			</main>
 			<script>addBlock(`footer`)</script>
 			<div id="footerWrap"></div>

@@ -1,25 +1,42 @@
 .footer {
 		
 	margin-top: auto;
-// --sPT: #{rem()};
+	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
+	background-color: #fff;
+	color: $gray-900;
 	&__row{
-		// --bs-gutter-x: #{rem()};
-		--bs-gutter-y: var(--bs-gutter-x);
+		--bs-gutter-y: #{rem(12)};
 
+		align-items: center;
 	}
-	.section-title{
-		
+	&__logo {
+		display: block;
+		width: 100%;
+		max-width: rem(177);
+		svg {
+			width: 100%;
+			path {
+				fill: $gray-900;
+			}
+		}
 	}
-	&__col{
-
+	.soc {
+		@include media-breakpoint-up(sm) {
+			justify-content: center;
+		}
 	}
-	&__item{
-
-	}
-	&__slide{
-		height: auto;
+	p {
+		font-size: rem(10);
+		line-height: 1.2;
+		margin-bottom: 0;
+		a {
+			color: $gray-900;
+			&:hover {
+				color: $primary;
+			}
+		}
 	}
 // 
 @include media-breakpoint-up(xl) {}

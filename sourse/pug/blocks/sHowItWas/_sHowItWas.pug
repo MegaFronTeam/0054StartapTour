@@ -1,0 +1,44 @@
+mixin sHowItWas(data)
+	// start sHowItWas
+	+b.SECTION.sHowItWas.section#sHowItWas&attributes(attributes)
+		+e.container.container
+			+img('img/sHowItWas-bg-1.png').bg
+			+b.section-title
+				h2 Как это было
+				
+			+e.row.row
+				.col-lg-6
+					+e.video-wrap: <iframe src="https://www.youtube.com/embed/6dBEqSJffwk" title="Why Do We Fall? (10 Hours of Ambient Batman Vibes)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					+e.inner-row.row
+						+e.inner-col.col-sm-6
+							+e.item
+								+img('img/sHowItWas-img-1.png')
+								.h4 Конкурс лучших стартапов страны
+								+e.btn.btn.btn-accent(href='#') Участвовать
+						+e.inner-col.col-sm-6
+							+e.item
+								.h4 Самое интересное на выставке
+								p Расскажите о&nbsp;своём проекте в&nbsp;рамках нашей онлайн выставки. Для этого выберите &laquo;Хочу принять участие в&nbsp;онлайн выставке&raquo; и&nbsp;заполните анкету в&nbsp;личном кабинете.
+							+e.item
+								.h4 Networking
+								p Вы&nbsp;можете назначить встречу любому участнику мероприятия, а&nbsp;это&nbsp;&mdash; идеальный шанс найти себе инвесторов, партнеров, клиентов и&nbsp;единомышленников в&nbsp;команду.
+					+e.item
+						.h4 Менторская сессия
+						p Презентуйте свой проект менторам и&nbsp;получите рекомендации по&nbsp;его развитию
+				.col-lg-6
+					ul
+						mixin listItem(title)
+							li
+								div
+									span 11 марта
+									.h4!= title
+								+e.list-btn.btn.btn-light(href='#') Финалисты
+						+listItem('Саранск')
+						+listItem('Новосибирск')
+						+listItem('Хабаровск')
+						+listItem('Саранск')
+						+listItem('Казань')
+						+listItem('Саратов')
+						+listItem('Пермь')
+						+listItem('Архангельск')
+	// end sHowItWas

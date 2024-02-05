@@ -1,11 +1,28 @@
 mixin headerBlock()
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-				+icon('telegram')
-				+iconC('telegram')
-			.row
-						
+		+e.container.container
+			+img('img/headerBlock-bg-1.png').bg
+			+b.section-title
+				+img('img/svg/logo-short.svg')
+				h1 Сколоково Стартап Тур<br>В&nbsp;поисках единорога
+			+e.btn.btn.btn-outline-light(href='#') Бесплатное офлайн участие
+			+e.slider.def-slider.swiper
+				.swiper-wrapper
+					mixin item(date, title, itemClass, btn='Программа', btnClass='btn-accent')
+						+e.item(class=itemClass)
+							+e.date!= date
+							.h4!= title
+							+e.btn-item.btn(class=btnClass)!= btn
+					+e.slide.swiper-slide
+						+item('10 февраля', 'Москва', 'pass', 'Как это было', 'btn-light')
+					+e.slide.swiper-slide
+						+item('1 марта', 'Красноярск', 'active')
+					+e.slide.swiper-slide
+						+item('10 апреля', 'Екатеринбург')
+					+e.slide.swiper-slide
+						+item('12 мая', 'Санкт-Петербург')
+					+e.slide.swiper-slide
+						+item('1 июня', 'Казань')
+				.swiper-scrollbar
 	// end headerBlock

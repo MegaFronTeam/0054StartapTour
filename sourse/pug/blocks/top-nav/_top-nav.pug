@@ -22,13 +22,17 @@ mixin top-nav()
 	+b.top-nav.block-with-lazy
 		.container
 			+e.row.row
-				.col-4
-				.col.order-lg-0.order-last
+				.col-auto.me-auto.me-lg-0: +e.logo(href='/'): +logo()
+				+e.col.col-auto.col-lg.order-lg-0.order-last
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
 							+menu-toggle()
 							+mnu()
-					
+							+e.btn.btn.btn-accent.d-sm-none(href='#') Зарегистрироваться
+				.col-auto.d-none.d-sm-block
+					+e.btn.btn.btn-accent(href='#') Зарегистрироваться
+				.col-auto
+					+e.btn-icon(href='#'): +icon('user')
 				.col-auto.d-lg-none
 					+menu-toggle()
 	// end top-nav

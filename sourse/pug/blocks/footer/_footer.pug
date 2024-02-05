@@ -1,9 +1,9 @@
 mixin footer()
 	+b.FOOTER.footer.section
 		.container
-			.row
-				.col
-					
-				.col Footer
-				.col
-				.col-auto
+			+e.row.row
+				.col-sm.col-lg-3.order-1
+					+e.logo(href='/'): +logo
+				.col-sm.col-lg-auto.order-3.order-lg-2: +e.btn.btn.btn-accent(href='#') Зарегистрироваться
+				.col-sm.col-lg-2.order-2.order-lg-3: +soc
+				.col-sm-auto.col-lg.order-4: p © Startup Tour 2024. Все права защищены | #[a(href='mailto:info@startup-tour.ru') info@startup-tour.ru] | #[a(href='tel:+74959560033') +7 (495) 956-00-33]

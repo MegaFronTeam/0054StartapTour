@@ -50,16 +50,18 @@ function eventHandler() {
 		watchOverflow: true,
 	});
 
-	const swiper4 = new Swiper(".sBanners__slider--js", {
-		// slidesPerView: 5,
-		...defaultSl,
-		slidesPerView: "auto",
-		freeMode: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
-		slideToClickedSlide: true,
-		freeModeMomentum: true,
-	});
+	let defSlider = document.querySelectorAll('.def-slider');
+	if(defSlider.length > 0) {
+		defSlider.forEach((item) => {
+			new Swiper(item, {
+				slidesPerView: "auto",
+				scrollbar: {
+					el: ".swiper-scrollbar",
+					hide: false,
+				},
+			});
+		})
+	}
 
 	
 }
