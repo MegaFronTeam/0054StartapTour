@@ -2,8 +2,8 @@
 	"nav":[
 		{ "name":"Главная", "url":"#"},
 		{	"name":"О туре", "url":"#"},
-		{"name":"Города", "url":"#"},
-		{"name":"Конкурс", "url":"#"},
+		{"name":"Города", "url":"#", "subnav": true},
+		{"name":"Конкурс", "url":"#", "subnav": true},
 		{"name":"Выставка", "url":"#"},
 		{"name":"Networking", "url":"#"},
 		{"name":"Участники", "url":"#"},

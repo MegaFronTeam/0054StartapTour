@@ -31,6 +31,9 @@
 		font-size: rem(10);
 		line-height: 1.2;
 		margin-bottom: 0;
+		@include media-breakpoint-up(lg) {
+			text-align: right;
+		}
 		a {
 			color: $gray-900;
 			&:hover {
