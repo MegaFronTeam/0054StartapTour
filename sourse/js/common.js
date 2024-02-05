@@ -55,9 +55,16 @@ function eventHandler() {
 		defSlider.forEach((item) => {
 			new Swiper(item, {
 				slidesPerView: "auto",
+				loop: item.dataset.loop ? true : false,
+				loopAdditionalSlides: 2,
 				scrollbar: {
-					el: ".swiper-scrollbar",
+					el: item.querySelector(".swiper-scrollbar"),
 					hide: false,
+					draggable: true,
+				},
+				navigation: {
+					nextEl: item.querySelector(".swiper-button-next"),
+					prevEl: item.querySelector(".swiper-button-prev"),
 				},
 			});
 		})

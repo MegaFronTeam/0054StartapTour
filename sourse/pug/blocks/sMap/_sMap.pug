@@ -8,6 +8,36 @@ mixin sMap(data)
 					a(href="#")!= link 
 			+e.map
 				+img('img/svg/map.svg').map
+				+e.slider.def-slider.swiper(data-loop=true)
+					.swiper-wrapper
+						+e.slide.swiper-slide
+							+e.slide-item
+								.h4 Байкальск
+								.month Апрель
+						+e.slide.swiper-slide
+							+e.slide-item
+								.h4 Екатеринбург
+								.month Апрель
+						+e.slide.swiper-slide
+							+e.slide-item
+								.h4 Байкальск
+								.month Апрель
+						+e.slide.swiper-slide
+							+e.slide-item
+								.h4 Байкальск
+								.month Апрель
+						+e.slide.swiper-slide
+							+e.slide-item
+								.h4 Байкальск
+								.month Апрель
+						+e.slide.swiper-slide
+							+e.slide-item
+								.h4 Байкальск
+								.month Апрель
+					.swiper-button-hand.swiper-button-hand-prev.swiper-button-prev
+						+img('img/svg/slider-arrow-left.svg')
+					.swiper-button-hand.swiper-button-hand-next.swiper-button-next
+						+img('img/svg/slider-arrow-right.svg')
 			+e.row.row
 				.col-sm-6.col-lg-4: +item('100+<br>Городов', 'Найти город')
 				.col-sm-6.col-lg-4: +item('100 000+<br>Участников', 'Стать участником')
