@@ -12,6 +12,28 @@
 		--bs-gutter-x: #{rem(18)};
 		--bs-gutter-y: #{rem(18)};
 	}
+	&__slider {
+		--sliderCount: 2;
+		--sliderGutter: #{rem(18)};
+		margin-right: calc(var(--sliderGutter) * -1);
+		overflow: visible;
+		@include media-breakpoint-up(sm) {
+			--sliderCount: 2;
+		}
+		@include media-breakpoint-up(md) {
+			--sliderCount: 3;
+		}
+		@include media-breakpoint-up(xl) {
+			--sliderCount: 4;
+			// --sliderGutter: #{rem(40)};
+		}
+	}
+	&__slide {
+		// width: calc(100% / var(--sliderCount));
+		margin-right: var(--sliderGutter);
+		height: auto;
+		width: calc(100% / var(--sliderCount) - var(--sliderGutter));
+	}
 	&__item{
 		.h4 {
 			margin-bottom: rem(12);

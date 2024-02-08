@@ -10,9 +10,14 @@ mixin sSpeakers(data)
 					.h4!= title
 					+e.status!= span
 					p!= text
-			+e.row.row
-				.col-6.col-md-4.col-lg-3: +item('sSpeakers-img-1.jpg', 'Наталина Снегурова', 'МИНЦИФРА РТ', 'Министр цифрового<br>развития государственного<br>управления, информационных<br>технологий и связи Республики Татарстан')
-				.col-6.col-md-4.col-lg-3: +item('sSpeakers-img-2.jpg', 'Виктор Викторовский', 'МИНЦИФРА РТ', 'Генеральный директор')
-				.col-6.col-md-4.col-lg-3: +item('sSpeakers-img-3.jpg', 'Михаил Цимбаль', 'МИНЦИФРА РТ', 'Руководитель')
-				.col-6.col-md-4.col-lg-3: +item('sSpeakers-img-4.jpg', 'Наталья Тарусинка', 'МИНЦИФРА РТ', 'Цифровой художник')
+			+e.slider.def-slider.swiper
+				.swiper-wrapper
+					+e.slide.swiper-slide: +item('sSpeakers-img-1.jpg', 'Наталина Снегурова', 'МИНЦИФРА РТ', 'Министр цифрового<br>развития государственного<br>управления, информационных<br>технологий и связи Республики Татарстан')
+					+e.slide.swiper-slide: +item('sSpeakers-img-2.jpg', 'Виктор Викторовский', 'МИНЦИФРА РТ', 'Генеральный директор')
+					+e.slide.swiper-slide: +item('sSpeakers-img-3.jpg', 'Михаил Цимбаль', 'МИНЦИФРА РТ', 'Руководитель')
+					+e.slide.swiper-slide: +item('sSpeakers-img-4.jpg', 'Наталья Тарусинка', 'МИНЦИФРА РТ', 'Цифровой художник')
+					+e.slide.swiper-slide: +item('sSpeakers-img-1.jpg', 'Наталина Снегурова', 'МИНЦИФРА РТ', 'Министр цифрового<br>развития государственного<br>управления, информационных<br>технологий и связи Республики Татарстан')
+					+e.slide.swiper-slide: +item('sSpeakers-img-2.jpg', 'Виктор Викторовский', 'МИНЦИФРА РТ', 'Генеральный директор')
+					+e.slide.swiper-slide: +item('sSpeakers-img-3.jpg', 'Михаил Цимбаль', 'МИНЦИФРА РТ', 'Руководитель')
+					+e.slide.swiper-slide: +item('sSpeakers-img-4.jpg', 'Наталья Тарусинка', 'МИНЦИФРА РТ', 'Цифровой художник')
 	// end sSpeakers
